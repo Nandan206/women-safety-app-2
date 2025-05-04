@@ -28,6 +28,7 @@ interface EmergencyContact {
 export default function DashboardPage() {
   const { toast } = useToast()
   const [contacts, setContacts] = useState<EmergencyContact[]>([
+    { id: "0", name: "Nagaraj", phone: "+91 73391 22810", relation: "Friend" },
     { id: "1", name: "Mom", phone: "+91 98765 43210", relation: "Family" },
     { id: "2", name: "Dad", phone: "+91 98765 12345", relation: "Family" },
     { id: "3", name: "Police", phone: "100", relation: "Emergency" },
